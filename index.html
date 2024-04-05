@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Age Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Age Game</h1>
+    <p>Can you guess the age? If you guess correctly, you'll win a prize!</p>
+    <img src="pic.png" alt="Prize Image">
+    <p>guess 1 to 1000</p>
+    <form id="guessForm">
+        <label for="age">Enter your guess:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <button type="button" onclick="checkGuess()">Submit</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
